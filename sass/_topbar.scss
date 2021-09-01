@@ -1,0 +1,74 @@
+.topbar {
+    background-color: rgba($color-secondary,.05);
+    
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    grid-template-columns: 30vw repeat(auto-fit, minmax(15rem, max-content));
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    
+   
+
+    
+    &__logo {
+        margin-left: 20rem;
+        width: 8rem;
+        height: 8rem;
+    }
+ 
+    &__nav {
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: repeat(4, max-content);
+        list-style: none;
+        grid-column-gap: 3rem;
+        
+ 
+        &-details {
+     
+        }
+ 
+        &-link:link,
+        &-link:visited {
+             font-size: 1.4rem;
+             font-weight: 400;
+             color: $color-secondary;
+             text-decoration: none;
+             font-family: $font-display;
+             text-transform: uppercase;
+             padding: 1rem 2rem; 
+             transition: all .2s;
+        }
+ 
+        &-link:hover,
+        &-link:active {
+             background-color: rgba($color-primary,.05);
+             border-radius: 50px;
+        } 
+    }
+ 
+    &__btn {
+        grid-column: 4 / span 1;
+        margin-left: 5rem;
+        margin-right: 30rem;
+        width: 10rem;
+        height: 4rem;
+        border-radius: 25px;
+        border: 1px solid $color-primary;
+        text-transform: uppercase;
+        transition: all .2s;
+     
+        &:hover,
+        &:active {
+             background-color: $color-primary;
+             color: white;
+             transition: all .2s;
+        }
+    }
+    
+    
+ }
+
+ 

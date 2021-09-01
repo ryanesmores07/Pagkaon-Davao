@@ -1,0 +1,59 @@
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+// COLOR VARIABLES
+$color-primary: #0e6412;
+$color-primary-dark: #08610c;
+$color-primary-light: #60ba62;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //10px/16px = 62.5% -> 1rem = 10px
+    
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-grey-dark-2;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 8rem 50vh repeat(5, min-content);
+    grid-template-columns: [full-start] repeat(8, [col-start] minmax(min-content, 1fr) [col-end]) [full-end];
+}
+
+.btn {
+    background-color: $color-primary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+}

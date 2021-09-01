@@ -1,0 +1,58 @@
+.features {
+    grid-column: col-start 1 / col-end 8;
+   
+    margin: 15rem 0;
+
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(20rem ,1fr));
+    align-items: start;
+    
+
+    
+    
+    &__details {
+        display: grid;
+        grid-template-columns: 27rem;
+        justify-items: center;
+        justify-content: center;
+        padding: 3rem;
+        
+        
+        
+    }
+
+    &__icon {
+        width: 8rem;
+        height: 8rem;
+        fill: rgba($color-primary, .8);
+    }
+
+    &__text {
+        font-size: 1.7rem;
+        line-height: 3rem;
+        text-align: center;
+        font-weight: 400;
+    }
+}
+
+.h2 {
+    text-align: center;
+    grid-column: col-start 3 / col-end 6;
+    margin: 15rem;
+    font-size: 3rem;
+    margin-bottom: -10rem;
+    color: $color-secondary;
+    font-style: italic;
+}
+
+
+
+.h3 {
+    
+    font-size: 2.2rem;
+    font-family: $font-display;
+    margin: 1.8rem;
+}
+
+
